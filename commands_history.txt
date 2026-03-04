@@ -1,0 +1,119 @@
+    1  cd ~
+    2  whoami
+    3  pwd
+    4  mkdir Bioinf_2026
+    5  cd Bioinf_2026 
+    6  mkdir sem_1
+    7  cd sem_1
+    8  touch script.sh
+    9  ls
+   10  vim script.sh
+   11  cat script.sh
+   12  chmod +x script.sh
+   13  echo "lulumba!" > script.sh
+   14  cat script.sh
+   15  ./ script.sh
+   16  cd
+   17  cd /
+   18  cd
+   19  cd Bioinf_2026
+   20  cat sem_2.csv
+   21  touch sem_2.csv
+   22  wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+   23  bash Miniconda3-latest-Linux-x86_64.sh
+   24  conda init
+   25  conda env list
+   26  conda create -n bm
+   27  conda env list
+   28  conda activate bm
+   29  conda list
+   30  conda deactivate
+   31  conda activate bm
+   32  conda list
+   33  conda create -n modern_projects python=3.11
+   34  conda install numpy=1.24 pandas=2.0
+   35  pip install biopython==1.83
+   36  conda list
+   37  conda env export > environment_full.yml
+   38  conda create -n my_project python=3.9
+   39  conda activate my_project
+   40  conda install numpy=1.24 pandas=2.0
+   41  pip install biopython==1.83
+   42  conda activate my_project
+   43  conda list
+   44  conda env export > environment_full.yml
+   45  conda create -n legacy_projects
+   46  conda env remove -n legacy_projects
+   47  conda list
+   48  conda env list
+   49  conda env create -f "C:\Users\swim4\Downloads\environment.yml"
+   50  conda env create -f "C:/Users/swim4/Downloads/environment.yml"
+   51  conda env create -f /mnt/c/Users/swim4/Downloads/environment.yml
+   52  conda env list
+   53  conda activate legacy_projects
+   54  conda list | grep numpy
+   55  conda list | grep nump
+   56  print(1)
+   57  cd ~
+   58  i
+   59  bash
+   60  vim check_env.py
+   61  conda activate legacy_project
+   62  conda env list
+   63  conda activate -n legacy_projects
+   64  conda activate legacy_projects
+   65  vim check_env.py
+   66  nano q.txt
+   67  git clone https://github.com/ВАШ_ЛОГИН/bioinformatics_hw.gitgit clone https://github.com/ВАШ_ЛОГИН/bioinformatics_hw.gi
+   68  git clone https://github.com/ВАШ_ЛОГИН/bioinformatics_hw.git
+   69  git clone https://github.com/swim4756-hub/https://github.com/swim4756-hub/Bioinf_Bgantsova.gi
+   70  git clone https://github.com/swim4756-hub/Bioinf_Bgantsova.git
+   71  cd Bioinf_Bgantsova
+   72  echo "# Bioinformatics homework" > README.md
+   73  echo "Дз1-Бганцова" >> README.md
+   74  git add README.md
+   75  git commit -m "Init"
+   76  git config --global user.name "Полина"
+   77  git config --global user.email "swim4756@gmail.com"
+   78  git commit -m "Init"
+   79  git push origin main
+   80  mkdir -p linux_task/data/raw
+   81  cd linux_task/data/raw
+   82  touch sample1.tsv sample2.tsv sample3.tsv
+   83  echo -e "GeneID\tExpression_Value" > sample1.tsv
+   84  cat sample1.tsv
+   85  cd ../../..
+   86  git add linux_task/
+   87  git commit -m "Create raw data structure"
+   88  cd linux_task/data/raw
+   89  cat > sequencing_summary.txt <<EOF
+run_id: RUN001
+date: 2026-02-18
+sample: sample1
+platform: Illumina
+read_length: 150
+total_reads: 1024
+sample: sample2
+total_reads: 2048
+sample: sample3
+total_reads: 4096
+EOF
+
+   90  grep "sample" sequencing_summary.txt > samples_list.txt
+   91  echo "Total samples found: $(grep -c "sample" sequencing_summary.txt)" >> samples_list.txt
+   92  tail -5 samples_list.txt
+   93  cd ../../..
+   94  git add linux_task/
+   95  git commit -m "Add sample list and count"
+   96  git checkout -b git-practice
+   97  echo "This is very important data." > important_note.txt
+   98  git add important_note.txt
+   99  git commit -m "Add important note"
+  100  rm important_note.txt
+  101  ls
+  102  git status
+  103  git restore important_note.txt
+  104  echo "git restore important_note.txt" > git_command.txt
+  105  git add git_command.txt
+  106  git commit -m "Restore deleted file"
+  107  history > commands_history.txt
